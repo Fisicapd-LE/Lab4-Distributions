@@ -1,0 +1,81 @@
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Alegreya}
+
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%%%%%
+%\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+%\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+
+%\usepackage[euler-digits,euler-hat-accent]{eulervm}
+%%%%%%
+%\usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
+%\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Miei package
+\usepackage[italian]{babel}
+\usepackage{graphicx}		% Per le immagini
+
+\usepackage{tabularx}		% Per le tabelle con le colonne tutte uguali
+\usepackage{tabulary}		% Tabelle migliorate, nelle celle il testo va a capo da solo...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+	    %hmargin=0.18\paperwidth,% metti la larghezza del testo (margini orizzontali) al 18% del foglio
+	    textwidth=3.1\alphabet,  % http://tex.stackexchange.com/questions/59626/nicely-force-66-characters-per-line
+	    hmarginratio=1:1,       % margini destro e sinistro uguali
+	    top=35mm,	            % margine sopra a 32mm...
+	    vmarginratio=4:5,       % quello sotto uguale (default 2:3)
+	    columnsep=20pt]         % Spazio tra le colonne]
+	    {geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage[titles]{tocloft} %Pare causi meno casini con fancyhdr
+\usepackage{nicefrac} % Per le frazioni tipo ⅛
+\usepackage{pdfpages} % Per includere pagine intere in pdf (per la copertina)
+                                                                                                                                                       \end{table}
+
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Running title $\bullet$ November 2012 $\bullet$ Vol. XXI, No. 1} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+
+
+\usepackage{etoolbox}
+
+\usepackage{textgreek}
+
+\usepackage{standalone}
+
+\usepackage{circuitikz}
+
+\usepackage{siunitx}
+
+\usepackage{subcaption}
+

@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{float}
+%\usepackage{caption}
+%\usepackage{multirow}
+%\usepackage[top=3.6cm, bottom=1.5in, left=0.5in, right=0.5in]{geometry}
+
+%%%%%%%%%%%%%%%%%
+% Robe del package tocloft per fare gli indici delle mie tabelle e grafici
+% texblog.org/2008/07/13/define-your-own-list-of/
+%\newcommand{\listtabellaname}{Lista delle tabelle}
+%\newlistof{tabella}{tab}{\listtabellaname}
+
+
+%%%%%%%%%%%%%%%%%
+
+% I miei stili di float, con le righe
+\floatstyle{plaintop}
+\newfloat{tabella}{tb}{lop} 
+\floatname{tabella}{Tabella}
+
+\floatstyle{ruled}
+\newfloat{grafico}{tb}{loi} 
+\floatname{grafico}{Grafico}
+
+\newcommand{\tabellaautorefname}{\bfseries Tabella} % per \autoref del package hyperref
+\newcommand{\graficoautorefname}{\bfseries Grafico} % Idem
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%%%%%%
+% Comandi personalizzati
+
+% \newcommand{\cm}{\,\mathrm{cm}}
+% \DeclareMathOperator{\cov}{cov} % Covarianza
+% \DeclareMathOperator{\var}{var} % Covarianza
+% \newcommand{\mm}{\,\mathrm{mm}}
+% \newcommand{\nm}{\,\mathrm{nm}}
+% \newcommand{\usuq}{\nicefrac{1}{q}}
+% \newcommand{\usup}{\nicefrac{1}{p}}

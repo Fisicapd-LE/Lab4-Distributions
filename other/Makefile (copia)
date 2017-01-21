@@ -1,0 +1,68 @@
+# IL file in latex della relazione
+FILE_REL_TEX = $(wildcard ./latex/main/*.tex)
+# Crea il nome del file .pdf da produrre dal nome del .tex
+PDF_RELAZIONE = $(patsubst %.tex, %.pdf, $(FILE_REL_TEX) )
+BASENAME_TEX = $(shell basename -a $(FILE_REL_TEX))
+BASENAME_PDF = $(patsubst %.tex, %.pdf, $(BASENAME_TEX) )
+
+PREGRAPHS = $(wildcard ./graphs/*)
+GRAPHS = $(foreach graph, $(PREGRAPHS), $(subst ./, ./latex/, $(graph)))
+#GRAPHS = $(patsubst %.pdf, %.tex, $(patsubst %.png, %.tex, $(PREGRAPHS)))
+PREHISTS = $(wildcard ./hist/*)
+HISTS = $(foreach hist, $(PREHISTS), $(subst ./, ./latex/, $(hist)))
+PREIMGS = $(wildcard ./img/*)
+IMGS = $(foreach img, $(PREIMGS), $(subst ./, ./latex/, $(img)))
+
+relazione: $(PDF_RELAZIONE)
+	@echo "Building thesis..."
+	cp $(PDF_RELAZIONE) ./
+	cp $(PDF_RELAZIONE) ./other/
+
+# Da aggiungere le tabelle
+$(PDF_RELAZIONE): graphs img hist chapters appendix
+	@echo "Building pdf..."
+#Ogni riga viene eseguita in una subshell diversa, quindi se faccio cd devo mettere sulla stessa linea gli altri comandi che necessitano dell'effetto di cd
+	cd ./latex/main;	pwd; latexmk -pdf $(BASENAME_TEX)
+	
+$(filter %.pdf, $(GRAPHS)): ./latex/graphs/%.pdf: ./graphs/%.pdf
+	./script/to_latex/graph_to_latex.sh $*
+
+$(filter %.png, $(GRAPHS)): ./latex/graphs/%.png: ./graphs/%.png
+	./script/to_latex/graph_to_latex.sh $* png
+	
+$(filter %.pdf, $(HISTS)): ./latex/hist/%.pdf: ./hist/%.pdf
+	./script/to_latex/hist_to_latex.sh $*
+
+.PHONY: clean graphs img chapters appendix
+clean:
+# @echo fa in modo che make non "echi" anche echo "Faccio il clean..."
+	@echo "Cleaning..."
+	-cd ./latex; pwd; latexmk -C -pdf $(BASENAME_TEX)
+	-rm ./latex/graphs/*.tex
+	-rm ./latex/hist/*.tex
+	-rm ./latex/img/*.tex
+	-rm $(BASENAME_PDF)
+	
+graphs: $(filter %.pdf, $(GRAPHS)) $(filter %.png, $(GRAPHS))
+	@echo "Formatting graphs..."
+	@echo $(GRAPHS)
+
+hist: $(filter %.pdf, $(HISTS))
+	@echo "Formatting histograms..."
+	
+img: $(filter %.pdf, $(IMGS))
+	@echo "Formatting images..."
+	
+chapters:
+	@echo "Adding chapters"
+	./script/add_sections/add_chapters.sh
+
+appendix:
+	@echo "Adding appendix"
+	./script/add_sections/add_appendix.sh
+	
+.SECONDEXPANSION:
+
+$(filter %.pdf, $(IMGS)): ./latex/img/%.pdf: $$(wildcard ./img/%.pdf) 
+#$$(wildcard ./img/%.png) $$(wildcard ./img/%.jpg)
+	./script/to_latex/img_to_latex.sh $*

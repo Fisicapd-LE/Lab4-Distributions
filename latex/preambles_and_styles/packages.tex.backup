@@ -1,0 +1,161 @@
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage{tgpagella} % TeX Gyre Pagella, versione migliorata di Palatino. Si ma bo, no
+\usepackage{inconsolata} % Font monospace
+%\usepackage{textcomp}
+\usepackage[scale=0.98,ttdefault]{AnonymousPro}
+
+%%%%%
+%\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+\usepackage{AlegreyaSans} %% Option 'black' gives heavier bold face 
+%\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+%\usepackage{opensans}
+%\usepackage[euler-digits,euler-hat-accent]{eulervm}
+\usepackage[euler-hat-accent]{eulervm}
+%%%%%%
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage{fontspec}
+%\setmainfont{tgpagella}
+%\setsansfont{AlegreyaSans}
+%\setmonofont{inconsolata}
+
+\usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
+\linespread{1.08} % Line spacing - Palatino needs more space between lines, messo a 1.08 da 1.11 che era per alegreya
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage[italian]{babel}
+%\usepackage[kerning,spacing,tracking,letterspace = 2,babel]{microtype} % Slightly tweak font spacing for aesthetics. Il tre è pensato per Alegreya
+\usepackage[kerning,spacing,babel]{microtype}
+\SetTracking[]{encoding = *,shape = *}{3} % Aumenta la distanza fra le lettere
+							     % http://tex.stackexchange.com/questions/66494/new-command-for-spacing-letters-in-microtype
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Miei package
+
+
+
+\usepackage{graphicx}		% Per le immagini
+%\usepackage{color}		% COLORI!
+
+%\definecolor{grigio-molto-scuro}{gray}{0.1}	%colore
+
+\usepackage{tabularx}		% Per le tabelle con le colonne tutte uguali
+\usepackage{tabulary}		% Tabelle migliorate, nelle celle il testo va a capo da solo...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\alphabet}
+\settowidth{\alphabet}{\normalfont abcdefghijklmnopqrstuvwxyz}
+\usepackage[
+	    %hmargin=0.18\paperwidth,% metti la larghezza del testo (margini orizzontali) al 18% del foglio
+	    textwidth=3.1\alphabet,  % http://tex.stackexchange.com/questions/59626/nicely-force-66-characters-per-line
+	    hmarginratio=1:1,       % margini destro e sinistro uguali
+	    top=35mm,	            % margine sopra a 32mm...
+	    vmarginratio=4:5,       % quello sotto uguale (default 2:3)
+	    columnsep=20pt]         % Spazio tra le colonne?
+	    {geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+%\usepackage{tocloft} % Per customizzare le liste di floats (per i custom float!)
+\usepackage[titles]{tocloft} %Pare causi meno casini con fancyhdr
+\usepackage{nicefrac} % Per le frazioni tipo ⅛
+\usepackage{pdfpages} % Per includere pagine intere in pdf (per la copertina)
+%\usepackage[squaren]{siunitx}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage[section]{placeins} % Per \FloatBarrier. L'opzione section comporta che le sezioni siano floatbarriers
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{caption} % Per captions avanzate
+
+\usepackage{listingsutf8} % Per includere codice sorgente meglio che con verbatim (e con caratteri non inglesi)
+\lstset{ 
+  %Preso anche questo da http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code E MESSO IN MONOSPACE
+  breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  %commentstyle=\color{mygreen},    % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  %escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=l,                    % adds a frame around the code
+				    %you can control the rules at the top, right, bottom, and left directly by using the four initial 
+				    %letters for single rules and their upper case versions for double rules. http://mirror.hmc.edu/ctan/macros/latex/contrib/listings/listings.pdf
+				    % Es frame frame=trBL ha doppia linea a sinistra e sotto, e singola a destra e sopra
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  %keywordstyle=\color{blue},       % keyword style
+  %language=Octave,                 % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  %stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\usepackage{titlesec} % Allows customization of titles
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+% \usefont {encoding} {family} {series} {shape}
+\titleformat{\section}[block]{\AlegreyaSansSC \bfseries \LARGE}{\thesection.}{1em}{} % Change the look of the section titles. Pezzi spostati \scshape\centering\bfseries
+\titleformat{\subsection}[block]{\AlegreyaSans \bfseries \Large}{\thesection.\thesubsection }{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\headheight=14pt % Perchè sennò continua a lamentarsi che 12pt è troppo poco e la mette a 14 lo stesso
+%\fancyhead[C]{Chiappara, Labanca, Forcher - \textit{Ottica geometrica} $\bullet$ \thesection}
+\fancyhead[L]{\textit{Lusiani Enrico}} % Custom header text. \nouppercase{\leftmark} per sezione, ma non ci sta
+\fancyhead[R]{\textsc{\nouppercase{\leftmark}}}
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage[hidelinks]{hyperref} % For hyperlinks in the PDF
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+   % pdftoolbar=true,        % show Acrobat’s toolbar?
+   % pdfmenubar=true,        % show Acrobat’s menu?
+   % pdffitwindow=false,     % window fit to page when opened
+    %pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Relazione di Elettronica},    % title
+    pdfauthor={E. Lusiani},     % author
+    pdfsubject={Tesi di Laurea - Anno accademico 2015-2016 - },   % subject of the document
+    %pdfcreator={Creator},   % creator of the document
+    %pdfproducer={Producer}, % producer of the document
+    pdfkeywords={photomultipliers} {tesi} {fotomoltiplicatori} {JUNO}, % list of keywords
+    %pdfnewwindow=true,      % links in new PDF window
+    %colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+\usepackage{etoolbox}
+
+\usepackage{textgreek}
+
+\usepackage{standalone}
+
+\usepackage{circuitikz}
+
+\usepackage{siunitx}
+
+\usepackage{subcaption}

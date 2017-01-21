@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pwd
+cd ./latex/slide/sections/chapters
+
+sections="%%sections"
+	
+for f in *[!.backup]
+do
+	sections="$sections\n\n\input{sections/slides/$f}\n\\\\FloatBarrier\n"
+done
+
+
+printf $sections > ../slides.tex
+
+

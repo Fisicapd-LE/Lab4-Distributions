@@ -1,0 +1,9 @@
+#!/bin/bash
+
+shopt -s extglob
+
+test="$(eval echo $1)"
+
+if [ "$test" != "$1" ]
+then echo $test
+fi

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+filename=$1
+
+if [ ${2//_nofloat} == $2 ]
+then
+	float="h"
+else
+	float="H"
+fi
+
+if [ -z $2 ]
+then 
+	ext="pdf"
+else
+	ext=$2
+fi
+
+testo="
+	 \begin{figure}[$float]
+	  \centering
+	   \includegraphics[width=\textwidth]{../../$2}"
+if [ -f ./graphs/$filename.txt ]
+then
+	testo=$testo"\caption{$(cat ./graphs/$filename.txt)}"
+else
+	testo=$testo"\caption{${filename//_/ }}"
+fi
+testo=$testo"\label{gr:$filename}
+	 \end{figure}
+	"
+	
+echo $testo > ./latex/graphs/$filename.tex
+
+exit 0;

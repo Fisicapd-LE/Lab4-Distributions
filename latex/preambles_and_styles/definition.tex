@@ -1,0 +1,20 @@
+\newtoggle{draft}
+\togglefalse{draft}
+
+\newcommand{\toprof}[1]
+{
+  \iftoggle{draft}{\emph{#1}}{}
+}
+
+\newcommand{\dd}{\mathop{}\,\mathrm{d}}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\newcommand{\isotope}[2]
+{%
+	$^{#2}\mathrm{#1}$%
+}

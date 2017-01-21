@@ -1,0 +1,65 @@
+\documentclass[6pt,a4paper, mathserif]{article} % Prepara un documento con un font grande
+
+\usepackage{iftex}
+
+\ifLuaTeX
+  \input{./preambles_and_styles/packages_luatex.tex}
+\else
+  \input{./preambles_and_styles/packages.tex}
+\fi
+\DeclareGraphicsExtensions{.pdf, .png, .jpg} % Se due immagini hanno lo stesso nome sceglile secondo l'ordine di filetype qui
+\graphicspath{ {../img/nofloat/} }					 % Path delle immagini 
+
+\input{./preambles_and_styles/float_styles.tex}
+
+\input{./preambles_and_styles/definition.tex}
+
+
+%////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+% Fine dei dati iniziali per il latex: il documento finale inizierà da qui
+\begin{document}
+
+\input{./sections/relation_title.tex}
+
+{
+  %\color{grigio-molto-scuro}
+  %\lsstyle % Abilita il letterspacing personalizzato
+  %\unclfamily % Cagata per il font Uncial
+  \vspace{ \stretch{1}
+}
+
+%\blankpage
+
+
+\vspace{ \stretch{1} }
+\noindent
+\input{./sections/abstract.tex}
+
+\blankpage
+
+
+\microtypesetup{protrusion=false} % disables protrusion locally in the document
+\tableofcontents % prints Table of Contents
+%\listoftabella
+%\listoffigures
+%\listoftables
+\microtypesetup{protrusion=true} % enables protrusion
+
+\blankpage
+
+\input{./sections/chapters.tex}
+
+\clearpage
+\begin{appendix}
+\input{./sections/appendix.tex}
+\end{appendix}
+\clearpage
+
+\input{./sections/bibliography}
+
+\input{./sections/code.tex}
+
+
+
+\end{document}
