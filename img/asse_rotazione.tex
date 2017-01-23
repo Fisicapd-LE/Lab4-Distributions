@@ -1,0 +1,39 @@
+\begin{tikzpicture}[scale=1.4, spy using outlines={ magnification=10, size=3cm, connect spies,every spy on node/.append style={ultra thin}}]
+\draw[->,thick] (-2,0)--(2,0) node[right]{$x$};
+\draw[->,thick] (0,-2)--(0,2) node[above]{$y$};
+
+\draw(-1,0) circle(1);
+\draw[red, line width=0.0mm]({-cos(20)},{sin(20)}) circle(0.998197872);
+\draw[blue, line width=0.0mm]({-cos(40)},{sin(40)}) circle(0.9963458709);
+\draw[green, line width=0.0mm]({-cos(50)},{sin(50)}) circle(0.994859807);
+\draw[cyan, line width=0.0mm]({-cos(70)},{sin(70)}) circle(0.99485981);
+\draw[magenta, line width=0.0mm]({-cos(90)},{sin(90)}) circle(0.991907519);
+
+
+\node [label=below left:0,draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (-1,0) {};
+\node [label=left:20,draw,fill=black,circle,inner sep=0pt,minimum size=3pt, red] at ({-cos(20)},{sin(20)}) {};
+\node [label=left:40,draw,fill=black,circle,inner sep=0pt,minimum size=3pt, blue] at ({-cos(40)},{sin(40)}) {};
+\node [label=above left:50,draw,fill=black,circle,inner sep=0pt,minimum size=3pt, green] at ({-cos(50)},{sin(50)}) {};
+\node [label=above left:70,draw,fill=black,circle,inner sep=0pt,minimum size=3pt, cyan] at ({-cos(70)},{sin(70)}) {};
+\node [label=above:90,draw,fill=black,circle,inner sep=0pt,minimum size=3pt, magenta] at ({-cos(90)},{sin(90)}) {};
+
+
+%\usetikzlibrary{spy}
+\spy on (0,0) in node [left] at (6.5,1);
+
+%\draw(-1.5,-2)--(1.5,-2);
+%\draw(0,-2) ellipse[x radius = 1.5,y radius = 1];
+
+%\node [label=below right:-R/2,draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (0,-2) {};
+%\draw[decorate, decoration={brace, mirror}] (-1.5,-2.1) -- (0,-2.1);
+%\draw[decorate, decoration=brace] (-0.1,-2) -- (-0.1,-1);
+
+%\node [label= left :$r \cos 30$] at (-0.11,-1.5) {};
+%\node [label= below :$r$] at (-0.75,-2.11) {};
+%\node [label= above right :$R$] at (4,0) {};
+
+%\node [label=above right:C,draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (0,1) {};
+%\node [label=below:F,draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (-0.87,0) {};
+%\node [label=below:F',draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (0.87,0) {};
+%\node [label=below left:-R/2,draw,fill=black,circle,inner sep=0pt,minimum size=3pt] at (-4,0) {};
+\end{tikzpicture} 

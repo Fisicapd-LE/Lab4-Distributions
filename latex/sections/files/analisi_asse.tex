@@ -1,0 +1,74 @@
+\subsection{Studio della geometria dell'apparato}
+Si è voluto studiare se la sorgente è posta effettivamente al centro dell'asse di rotazione o meno. per farlo si sono semplicemente presi dei dati per un tempo
+costante al variare dell'angolo, e si vuole confrontare la rate con cui tali dati sono stati raccolti, in questo modo si avrà una stima della distanza tra sorgente e
+rivelatore al variare dell'angolo del rivelatore stesso. I risultati si possono vedere nella Tabella \ref{tab:asse_dati}, dove l'errore sulle rate è stato preso
+come errore poissoniano sui conteggi e considerando che il tempo non ha errore.
+%
+\begin{table}[h]
+	\centering
+	\input{tables/asse_dati.tex}
+	\caption{Rate di acquisizione al variare dell'angolo del rivelatore.}
+	\label{tab:asse_dati}
+\end{table}
+%
+Per trovare ora la posizione dell'asse di rotazione rispetto a quella della sorgente si vada nel sistema di riferimento in cui l'origine è l'asse di rotazione stesso.
+Considerando il rivelatore come a dimensione piccola rispetto alla sua distanza dalla sorgente, si ha che la frequenza con cui registra dati va come $1/r^2$, con $r$ distanza
+tra rivelatore e sorgente. Si consideri un sistema di riferimento in modo tale che il rivelatore a  gradi giaccia sul semiasse negativo delle ascisse, e l'asse di
+rotazione sia sullo zero, e si riscali in maniera che il rivelatore giaccia nelle coordinate (-1,0). In questo modo la distanza tra rivelatore è sorgente sarà presa come 1,
+e sarà la distanza di riferimento. Allora, nelle altre configurazioni, considerando la rotazione come perfetta (cioè rotazione attorno ad un asse realmente unidimensionale),
+si ha che nelle altre configurazioni il rivelatore occupa delle coordinate nel sistema cartesiano facilmente ricavabili a partire da funzioni goniometriche, e la distanza
+dalla sorgente si ottiene a partire da quella di riferimento moltiplicandola per un fattore $\sqrt{\frac{\nu_0}{\nu_\theta}}$, cioè per la radice del rapporto tra la rate
+di riferimento e a quell'angolo. Per calcolare le grandezze allora si trova da ragionamenti di natura geometrica:
+$$ x_\theta = x_0 \cos \theta \hspace{1.5cm} y_theta = y_0 \sin \theta \hspace{1.5cm} r_theta = r_0 \sqrt{\frac{\nu_\theta}{\nu_0}}$$
+Per fare questi calcoli si è trascurato l'errore sulle rate (e quindi sulle distanze): dato che i conteggi non sono così differenti tra loro, l'errore si approssima con facilità
+ad essere uguale per tutte le configurazioni, quindi è sufficiente minimizzare la distanza dai cerchi per trovare il valore più palusibile della posizione della sorgente.
+I cerchi si possono vedere nella Figura \ref{gr:asse_rotazione}\\
+\input{./img/asse_rotazione}
+
+Per fare tale operazione si va a definire la funzione analitica che descrive la somma della distanza al quadrato tra i cerchi su cui si prevede giaccia la sorgente:
+$$d = \sum\limits_\theta \left(\sqrt{(x-x_\theta)^2+(y-y_\theta)^2} - r_\theta\right)^2$$
+Minimizzare questa funzione non è semplice, conviene vederla come un $\chi$ quadro: si può fare un fit al posto che la minimizzazione di una funzione.
+Si consideri la funzione che descrive la distanza della
+sorgente dal rivelatore. Usando le stesse notazioni del ragionamento precedente, si ha che la distanza tra un punto $(x,y)$ e il rivelatore nella posizione $\theta$ è data da
+$$\sqrt{(x-x_\theta)(y-y_\theta)}$$
+Perciò andando a vedere il raggio stimato precedentemente come valore atteso della distanza, si può fare un fit a due parametri liberi con quattro punti per ottenere
+l'effettiva posizione nel piano della sorgente rispetto all'asse di rotazione. Si esegue questa operazione, andando a trovare il grafico che si può vedere nella
+Figura \ref{gr:asse_fit}. Questo rivela come la sorgente sia nel punto:
+$$(0.0013 \pm 0.0003, 0.0079 \pm 0.0003)$$
+\input{./graphs/asse_bidim}
+
+Alla luce di quanto discusso fin'ora, si può andare a definire nel migliore dei modi possibili la geometria dell'esperimento. In laboratorio si sono misurate le
+seguenti grandezze:
+$$R1 = 14.1 \text{cm} \hspace{1.5cm} R2 = 14.5 \text{cm} \hspace{1.5cm} d = 8 \text{cm}$$
+Che indicano la distanza tra sorgente e rivelatore 1 (nella configurazione a zero gradi), sorgente e rivelatore 2 e il diametro di entrambi i rivelatori. Dai calcoli fatti
+risulta che la sorgente non coincide esattamente con l'asse di rotazione di R1. Perciò R1 non è l'unità nel sistema di riferimento precedentemente scelto, ma si ha che R1
+è uguale a $\sqrt{(1+0.0013)^2+(0.0079)^2} = 1.0013$
+e perciò l'unità nel sistema di riferimento precedente è data da:
+$$u =\frac{R1}{1.0013}=14.1 \text{cm}$$
+e questo numero permette di reinterpretare tutti i rapporti precedentemente scritti. In particolare quindi, se l'asse è nell'origine del sistema di riferimento, la
+sorgente è spostata a destra di 0.018~cm e verso l'alto di 0.114~cm.\\
+
+Una volta descritta la geometria del problema utilizzando il rivelatore R1, si vuole comprendere cosa succede con R2 oppure come utilizzare l'informazione ottenuta per
+modificare la descrizione al variare dell'angolo. Per discutere R2 si può andare a guardare un diverso file di dati: R2 in un'altra misurazione ha preso un buon numero
+di dati con una rate che si attesta intorno a $(8.125 \pm 0.004)$~KHz. Considerando il ragionamento fin'ora fatto sul rapporto tra rate e distanze, risulta che il
+rivelatore R2 dovrebbe essere a una distanza dalla sorgente di $14.1 \text{cm} \sqrt{\frac{8.301}{8.125}} = 14.4 \text{cm}$, che è un valore perfettamente in linea con
+l'errore casuale legato all'utilizzo del metro per la misura delle distanze.\\
+
+Ora si vuole andare a interpretare il risultato ottenuto: se l'asse di rotazione non coincide con il supporto per la sorgente, vuol dire che spostando il rivelatore non
+si raggiunge effettivamente esattamente l'angolo, si calcoli allora a quale angolo si pone il rivelatore. Trascurando ancora il fatto che il rivelatore potrebbe avere
+un'orientazione non perfetta rispetto alla sorgente, se ne trascurano le dimensioni fisiche, e si consideraqual è la distanza dalla sorgente e l'angolo a cui il rivelatore
+si trova. Dato che non si può ragionare altrimenti, si considera R2 come perfettamente orientato rispetto alla sorgente, e si considera un eventuale cattivo allineamento
+nel sistema R2-sorgente-R1 come un non allineamento tra la sorgente e R1 (cioè si considera la proiezione della sorgente come al centro di R2). Da calcoli di natura
+trigonometrica, sapendo la posizione della sorgente rispetto all'asse di rotazione, si trovano i valori riassunti nella Tabella \ref{tab:asse_correzioni}\footnote{Si noti
+che non si sono fatte le necessarie approssimazioni in quella tabella, ciò è conseguenza del fatto che prima di approssimare correttamente i valori si vuole conoscere 
+l'entità della correzione da fare}, che sono stati ottenuti utilizzando le formule:
+$$\theta' = 180 -\arctan\left(\frac{y_s-\sin\theta}{x_s+\cos\theta}\right) \hspace{3 cm} d' = \sqrt{(x_0+\cos\theta)^2+(y_0-\sin\theta)^2}$$
+e la distanza è, come prima, in unità arbitrarie, cioè nel sistema di riferimento in cui la distanza tra il rivelatore uno e l'asse (cioè 14.1~cm) è unitaria.
+%
+\begin{table}[h]
+	\centering
+	\input{tables/asse_correzioni.tex}
+	\caption{Correzione dei valori di distanze e angoli alle varie configurazioni.}
+	\label{tab:asse_correzioni}
+\end{table}
+%
