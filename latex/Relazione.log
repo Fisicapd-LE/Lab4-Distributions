@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  24 JAN 2017 00:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  24 JAN 2017 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2616,8 +2616,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 )) [2] [3] (./sections/files/analisi_asse.tex (./tables/asse_dati.tex)
 
-LaTeX Warning: Reference `gr:asse_rotazione' on page 4 undefined on input line 
-25.
+LaTeX Warning: Reference `img:asse_rotazione' on page 4 undefined on input line
+ 25.
 
 (./img/asse_rotazione.tex (../img/nofloat/../../img/asse_rotazione.tex)
 File: ../img/nofloat/../../img/asse_rotazione.tex Graphic file (type tex)
@@ -2627,11 +2627,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4
 
-]
-
-LaTeX Warning: Reference `gr:asse_fit' on page 5 undefined on input line 36.
-
-(./graphs/asse_bidim.tex (../img/nofloat/../../graphs/asse_bidim.tex
+] (./graphs/asse_bidim_2.tex (../img/nofloat/../../graphs/asse_bidim_2.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2642,24 +2638,24 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-File: ../img/nofloat/../../graphs/asse_bidim.tex Graphic file (type tex)
+File: ../img/nofloat/../../graphs/asse_bidim_2.tex Graphic file (type tex)
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 
  []
 
 [5]
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 64.
+(Font)              scaled to size 8.0pt on input line 65.
  (./tables/asse_correzioni.tex)) [6]) (./sections/chapters/PLACEHOLDER.txt)) [7
 ] (./sections/appendix.tex (./sections/appendix/PLACEHOLDER.txt))
 (./sections/bibliography.tex
@@ -2691,11 +2687,11 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 41737 strings out of 493304
- 874843 string characters out of 6139871
- 1105819 words of memory out of 5000000
- 44125 multiletter control sequences out of 15000+600000
- 136905 words of font info for 146 fonts, out of 8000000 for 9000
+ 41748 strings out of 493304
+ 875036 string characters out of 6139871
+ 1105999 words of memory out of 5000000
+ 44130 multiletter control sequences out of 15000+600000
+ 137306 words of font info for 149 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  76i,15n,99p,10447b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/sh
@@ -2710,10 +2706,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share
 live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/f
 onts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gy
 re/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (11 pages, 161512 bytes).
+Output written on Relazione.pdf (11 pages, 161123 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 146 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  21 named destinations out of 1000 (max. 500000)
  38957 words of extra memory for PDF output out of 42996 (max. 10000000)
 
