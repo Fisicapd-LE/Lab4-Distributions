@@ -1,8 +1,12 @@
 \subsection{Calibrazione}
 Un primo passo necessario per la successiva analisi dati vera e propria è la calibrazione dei sistema di acquisizione, effettuata tramite una conoscenza a priori dell'energia
-associata ai fotoni emessi dalla sorgente. I fotoni utilizzati a tale scopo sono quelli relativi alla cascata gamma successiva al decadimento $\beta$ del nucleo di cobalto, ovvero
+associata ai fotoni emessi dalla sorgente. I fotoni utilizzati a tale scopo sono quelli relativi alla cascata gamma successiva al decadimento $\beta$ del nucleo di \isotope{Co}{60}, ovvero
 i gamma con energia pari a 1173 keV e 1333 keV. Per ogni rivelatore è stato quindi acquisito uno spettro in cui fossero visibili i picchi associati a tali gamma che sono stati
 successivamente fittati in maniera tale da potervici associare un centroide. A questo punto avendo due coppie di valori per rivelatore sarebbe in linea di principio possibile
 ottenere una relazione lineare che permette di calibrare lo spettro, ma essendo i centroidi trovati di valore molto grande $\approx 10^4$ e relativamente molto vicini, ciò
-porterebbe ad una grande incertezza sul parametro di ordine 0 del fit ($p_0$). Si è quindi acquisito un ulteriore spettro relativo ad una sorgente di Americio che presenta 
+porterebbe ad una grande incertezza sul parametro di ordine 0 del fit ($p_0$). Si è quindi acquisito un ulteriore spettro relativo ad una sorgente di \isotope{Am}{241} 
+che presenta 
 un picco a 59.5 keV, ottenendo in tal modo un terzo punto per la calibrazione. Di seguito i punti ottenuti per la calibrazione ed i parametri ricavati dal fit.
+
+\input{./graphs/Calib_R1}
+\input{./graphs/Calib_R2}

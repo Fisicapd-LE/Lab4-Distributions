@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  23 JAN 2017 23:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  23 JAN 2017 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2555,11 +2555,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2567,25 +2562,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
-      [1]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+l.18 U
+      na volta conosciuta la struttura precisa dell'apparato si è passati a...
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--4
+Underfull \hbox (badness 10000) in paragraph at lines 20--4
 
  []
 
-(./sections/chapters/PLACEHOLDER.txt)) [2] (./sections/appendix.tex
+(./sections/chapters/02-Analisi.tex (./sections/files/calibrazione.tex
+(./graphs/Calib_R1.tex (../img/nofloat/../../graphs/Calib_R1.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/Calib_R1.tex Graphic file (type tex)
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./graphs/Calib_R2.tex (../img/nofloat/../../graphs/Calib_R2.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/Calib_R2.tex Graphic file (type tex)
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)) [2] [3]) (./sections/chapters/PLACEHOLDER.txt)) (./sections/appendix.tex
 (./sections/appendix/PLACEHOLDER.txt)) (./sections/bibliography.tex
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ) (./sections/code.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [3
+ [4
+
 
 
 ]
@@ -2594,7 +2626,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 7B21D05B74B91E6E29D3DDE7530618BC;57.
+(rerunfilecheck)             Checksum: 2B863C93C8F74045B5E3B1ECA170B809;165.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2605,23 +2637,25 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40706 strings out of 493304
- 854034 string characters out of 6139871
- 1049217 words of memory out of 5000000
- 43209 multiletter control sequences out of 15000+600000
- 104174 words of font info for 101 fonts, out of 8000000 for 9000
+ 41240 strings out of 493304
+ 864997 string characters out of 6139871
+ 1102857 words of memory out of 5000000
+ 43710 multiletter control sequences out of 15000+600000
+ 111062 words of font info for 109 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 58i,11n,92p,10447b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,92p,10447b,971s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/t
 ex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pfb></usr/share/te
-xmf/fonts/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/fonts/type1/public/t
-ex-gyre/qplri.pfb>
-Output written on Relazione.pdf (6 pages, 102683 bytes).
+cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb
+></usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts
+/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/q
+plri.pfb>
+Output written on Relazione.pdf (7 pages, 121777 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 29717 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 30757 words of extra memory for PDF output out of 35830 (max. 10000000)
 
