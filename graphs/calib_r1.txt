@@ -1,0 +1,1 @@
+Grafico della calibrazione in energia del primo canale.
