@@ -44,45 +44,63 @@ TH1F* getHistoWithFilter(char *name_file, int numBins, double minX, double maxX,
   TH1F *h_spectrum0 = new TH1F("h_spectrum0","Total spectrum0",numBins,minX,maxX);
   TH1F *h_spectrum1 = new TH1F("h_spectrum1","Total spectrum1",numBins,minX,maxX);
   
-  int k = 0;	//new index for cycles
+  Long64_t i = 0;
+  Long64_t k = 0;	//new index for cycles
+  Long64_t ksave;
+  Long64_t imax = inbranch0->GetEntries();
+  Long64_t kmax = inbranch1->GetEntries();
   bool trigger = 1;	//trigger == TRUE
   
+  cout << "DEBUG: kmax = "<< kmax << " imax = " << imax << endl;
+  inbranch1->GetEntry(k);
   
   // histogram filling
-  for (int i=0; i<inbranch0->GetEntries(); i++) {	//cycle over R1 data
+  for (i=0; i<imax; i++) {	//cycle over R1 data
     inbranch0->GetEntry(i);
     if (indata0.qlong>lowThr0 && indata0.qlong<highThr0)	//the single energy measurement is in the peak 
     {
       trigger = 1;
       //cout << "DEBUG: timetag0 = " << indata1.timetag << endl;
-      while(indata1.timetag < indata0.timetag)		//find the coincidence
+      while(indata1.timetag < indata0.timetag -100 && k < kmax)	//find the coincidence
       {
-	//if(k > inbranch1->GetEntries() -1)
-	//{
-	  //cout << "FILE OVER = " << k << " is " << indata1.timetag << endl;
-	  //break;
-	//}
 	inbranch1->GetEntry(k);
 	k++;
       }
       if(indata1.timetag > (indata0.timetag + 100)) 
       {
-	//cout << "DEBUG: timetag0 = " << indata0.timetag << " timetag1 = " << indata1.timetag << endl;
+	//cout << "DEBUG: timetag0 = " << indata0.timetag << " timetag1 = " << indata1.timetag << " k = " << k << endl;
 	//cout << "DEBUG: condition = " << (indata1.timetag > indata0.timetag + 100) << endl;
 	//cout << "DEBUG: indata0.timetag + 100 = " << indata0.timetag + 100 << endl;
 	//cout << "DEBUG: distance " << indata0.timetag +100 - indata1.timetag << endl;
 	cout << "Corresponding timetag not found!" << endl;
 	trigger = 0;
-	k--;
+	if(k!=0) k--;
 	continue; 
       }
-      if(indata1.qlong>lowThr1 && indata1.qlong<highThr1 && trigger)
+      if(indata1.qlong>lowThr1 && indata1.qlong<highThr1 && trigger && k <= kmax)
       {
 	cout << "Coincidence Found!" << endl;
         h_spectrum0->Fill(indata0.qlong);
         h_spectrum1->Fill(indata1.qlong);
       }
-	
+      
+      while((indata1.qlong<lowThr1 || indata1.qlong>highThr1) && k < kmax)
+      {
+	ksave = k;
+	k++;
+	inbranch1->GetEntry(k);
+	if(indata1.timetag > indata0.timetag +100)
+	{
+	  h_spectrum0->Fill(indata0.qlong);
+	  h_spectrum1->Fill(indata1.qlong);
+	}
+	if(indata1.timetag > indata0.timetag +100) 
+	{
+	  k--;
+	  break;
+	}
+      }
+      
     }
   }
   // return
