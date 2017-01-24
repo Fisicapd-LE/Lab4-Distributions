@@ -89,14 +89,15 @@ TH1F* getHistoWithFilter(char *name_file, int numBins, double minX, double maxX,
 	ksave = k;
 	k++;
 	inbranch1->GetEntry(k);
-	if(indata1.timetag > indata0.timetag +100)
+	if(indata1.timetag < indata0.timetag +100 && indata1.qlong>lowThr1 && indata1.qlong<highThr1)
 	{
 	  h_spectrum0->Fill(indata0.qlong);
 	  h_spectrum1->Fill(indata1.qlong);
+	  break;
 	}
 	if(indata1.timetag > indata0.timetag +100) 
 	{
-	  k--;
+	  k = ksave;
 	  break;
 	}
       }
