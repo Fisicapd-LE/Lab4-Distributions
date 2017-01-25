@@ -9,7 +9,7 @@ Figura \ref{gr:efficienza_int_picco} si può vedere il picco a 1173~keV di R1, c
 Nella Figura \ref{gr:efficienza_picco0} e \ref{gr:efficienza_picco1}, invece, si possono vedere i due spettri una volta imposta la coincidenza e richiesto che i fotoni stessero
 nei fotopicchi di interesse, e queste figure rivelano come effettivamente si abbiano $(3.35800 \pm 0.0058)\times 10^5$ coincidenze. Questo vuol dire che l'efficienza del rivelatore nella configurazione
 a zero gradi è data da
-$$\varepsilon=\frac{3.35\times 10^5}{7.32447 \times 10^7}=(4.574 \pm 0.008)\times 10^{-3}$$
+$$\varepsilon_{1333}=\frac{3.35\times 10^5}{7.32447 \times 10^7}=(4.574 \pm 0.008)\times 10^{-3}$$
 \input{./graphs/efficienza_int_picco}
 \input{./graphs/efficienza_picco0}
 \input{./graphs/efficienza_picco1}
@@ -30,7 +30,12 @@ direttamente dai grafici, e rivelano i valori:
 $$I_{1173} = (7.32447 \pm 0.00085)\times 10^7 \hspace{3cm} I_{1333} = (6.22539 \pm 0.00079)\times 10^7$$
 Per quanto riguarda il picco somma, invece, dato che giace su un fondo non trascurabile, per leggerne l'integrale conviene andare a guardare i valori dei parametri
 interpolanti, in particolare si avrà:
-$$I_{2506}= p3\ p5\sqrt{2\pi} = (2.097 \pm 0.073)\times 10^4$$
-Dove l'errore è stato calcolato considerando gli errori stimati dal fit e la loro correlazione. Allora, considerando gli integrali dei picchi come indipendenti, per quanto
+$$I_{2506}= p3\ p5\sqrt{2\pi} = (2.097 \pm 0.021)\times 10^4$$
+Dove l'errore è stato calcolato considerando gli errori stimati dal fit e la loro correlazione (comunque si vede essere dello stesso ordine di quello che sarebbe un errore
+poissoniano associato alla misura). Allora, considerando gli integrali dei picchi come indipendenti, per quanto
 scritto si avrà:
-$$\varepsilon_{1173}=\frac{I_{2506}}{I_{1333}}=(3.368 \pm )\times 10^{-4} \hspace{3cm} \varepsilon_{1333}=\frac{I_{2506}}{I_{1173}}=(2.863 \pm )\times 10^{-4}$$
+$$\varepsilon_{1173}=\frac{I_{2506}}{I_{1333}}=(3.368 \pm 0.12)\times 10^{-4} \hspace{3cm} \varepsilon_{1333}=\frac{I_{2506}}{I_{1173}}=(2.863 \pm 0.10)\times 10^{-4}$$
+
+Questi valori sono abbastanza in linea con quello che ci si aspetta, in particolare si nota come la risoluzione per quanto riguarda il fotone a 1333~keV sia abbastanza
+simile a quella che era stata stimata in precedenza (sebbene non siano compatibili: si stanno probabilmente trascurando tutta una serie di errori sistematici considerando
+come unico errore quello poissoniano).
