@@ -9,7 +9,7 @@ double deg(double theta);
 double r = 4;
 double R = 14.1; 
 double G = atan(r/R);
-double a = 0.12;
+double a = 0.125;
 double b= 0.042;
 
 
@@ -17,9 +17,9 @@ int main()
 {
   using namespace std;
   
-  double theta[11] = {180, 170, 160, 150, 140, 130, 110, 100, 90, 170};
+  double theta[10] = {180, 170, 160, 150, 140, 130, 120, 110, 100, 90};
   double alphabar;
-  for(int i =0; i < 11; i++)
+  for(int i =0; i < 10; i++)
   {
    alphabar = acos( -sqrt( (sqrt( a*a -4*b*(1-func_I(rad(theta[i])))) -a )/ (2*b)) );
    cout << i << " angle: " << deg(alphabar) << endl;

@@ -1,0 +1,41 @@
+\subsubsection{Correzione per angolo solido finito}
+
+Nell'analizzare la dipendenza angolare delle rate di acquisizione per verificare l'anisotropia dell'emissione del secondo gamma si è in prima trascurata la dimensione finita del rivelatore 
+considerandolo puntiforme. Ovviamente tale approssimazione porta a degli errori nell'analisi dati, soprattutto per il fatto che la funzione di correlazione non è costante su tutto l'angolo solido
+spazzato dal rivelatore. Al fine di correggere questa inesattezza, si può pensare di ricavare per ogni angolo $\alpha$ tra i due rivelatori un angolo $\bar\alpha$ tale che l'integrale sull'angolo
+sotteso dal rivelatore posto ad un angolo $\alpha$ della funzione di correlazione sia pari all'integrale di una distribuzione uniforme sull'angolo sotteso dal rivelatore posto invece ad un angolo 
+$\bar\alpha$. Sappiamo che la distribuzione di probabilità dell'emissione del secondo fotone in funzione dell'angolo tra i due fotoni è $1 + a \cos ^ 2 \theta + b \cos^4 \theta $, quindi ciò che è 
+stato detto nella frase precedente si traduce in:
+$$ \int_{R2} \left[1 + a \cos ^ 2 \theta + b \cos^4 \theta \right] \dd \Omega = \left( 1 + a \cos ^ 2 \bar \theta + b \cos^4 \bar\theta \right) \int_{R2} \dd \Omega $$
+Dove con $ \int_{R2} \dd \Omega $ si intende l'integrale sull'angolo solido sotteso dal rivelatore 2. Fissiamo un sistema di riferimento tale che l'asse $z$ passi per il centro del rivelatore 1 e tale che il
+centro del secondo rivelatore giace sul piano $yz$. Supponiamo inoltre che il primo fotone venga rivelato esattamente al centro del rivelatore 1 e che si possa quindi parametrizzare la sua traiettoria con il 
+versore $n_{1} = \left( 0, 0, 1 \right)$. Il secondo fotone viene invece emesso ad una direzione arbitraria parametrizzata dal versore $n_{2}= \left( \cos \phi \sin \theta, \sin \phi \sin \theta, \cos \theta \right)$.
+Notiamo che $n_{1} \cdot n_{2} = \cos \theta $, quindi $\theta$ è effettivamente l'angolo cercato su cui verrà effettuato l'integrale. Per ricavare delle condizioni sugli angoli, notiamo che la proiezione 
+del rivelatore 2 sul piano $xz$ è un'ellisse di equazione:
+$$ \frac{\left( z - R \cos \alpha \right)^2}{r^2 sin^2 \alpha} + \frac{x^2}{r^2} = 1 $$
+con $r$ raggio del rivelatore ed $R$ distanza del rivelatore dalla sorgente.
+Affinchè il fotone 2 venga rivelato le coordinate \(x\) e \(y\) appartenenti al vettore $R n_2 = \left( x, y, z \right)$ devono appartenere all'ellisse, ovvero:
+$$ \frac{\left( \cos \theta -  \cos \alpha \right)^2}{sin^2 \alpha} + \cos^2 \phi sin^2 \theta\le \frac{r^2}{R^2} $$
+Per come è stato costruito il sistema di riferimento l'angolo $\phi$ è tale che $\cos \phi \approx 1$ per cui :
+$$ \frac{\left( \cos \theta -  \cos \alpha \right)^2}{sin^2 \alpha} + sin^2 \theta\le \frac{r^2}{R^2} $$ 
+da cui con un po' di algebra si giunge a :
+$\cos^2 \theta \cos^2 \alpha - 2 \cos \theta \cos \alpha +1 - \left(\frac{r}{R}\right) sin^2 \theta \le 0 $
+che ha come soluzioni 
+$$\frac{1 - g \cdot\sin \alpha}{\cos \alpha} \le \cos \theta \le \frac{1 + g \cdot\sin \alpha}{\cos \alpha}$$
+dove $g = r/R$
+Abbiamo quindi una condizione sull'angolo $\theta$, mentre quella su $\phi$ è ricavabile tramite semplici considerazioni geometriche, ovvero $-\arctan\left(\frac{r}{R} \right) \le \phi \le \arctan\left(\frac{r}{R} \right)$.
+Chiamiamo per comodità $\frac{1 \pm g \cdot\sin \alpha}{\cos \alpha} = C_{\pm}$ e $\arctan\left(\frac{r}{R} \right) = G$. Si è adesso in grado di calcolare l'integrale:
+$$ \int_{R2} \left[1 + a \cos ^ 2 \theta + b \cos^4 \theta \right] \dd \Omega = \int_{-G}^{G} d \phi \int_{C_{+}}^{C_{-}} \dd \cos \left(\theta \right) \left[1 + a \cos ^ 2 \theta + b \cos^4 \theta \right] $$
+$$ 2G \left[ \cos \theta + \frac{a}{3} \cos ^3 \theta + \frac{b}{5} \cos ^5 \theta \right]_{C_{+}}^{C_{-}} $$
+Il secondo integrale invece:
+$$ \int_{R2} \dd \Omega = \int_{-G}^{G} \dd \phi \int_{C_{+}}^{C_{-}} \dd \cos \left(\theta \right) = 2G \left[ \cos \theta \right]_{C_{+}}^{C_{-}} $$
+Dalla condizione
+$$ \int_{R2} \left[1 + a \cos ^ 2 \theta + b \cos^4 \theta \right] \dd \Omega = \left( 1 + a \cos ^ 2 \bar \theta + b \cos^4 \bar\theta \right) \int_{R2} \dd \Omega $$
+si ricava
+$$1 + a \cos ^ 2 \bar \theta + b \cos^4 \bar\theta = \frac{\int_{R2} \left[1 + a \cos ^ 2 \theta + b \cos^4 \theta \right] \dd \Omega}{\int_{R2} \dd \Omega} =
+\frac{\left[ \cos \theta + \frac{a}{3} \cos ^3 \theta + \frac{b}{5} \cos ^5 \theta \right]_{C_{+}}^{C_{-}}}{\left[ \cos \theta \right]_{C_{+}}^{C_{-}}} := I$$
+quindi:
+$$ b \cos^4 \bar\theta + a \cos ^ 2 \bar \theta + 1 - I= 0 $$
+Tale equazione ha come soluzioni:
+$$ \cos^2 \bar \theta  = \frac{-a + \sqrt{a^2 - 4b(1 - I)}}{2b} $$
+dove si è scartata la soluzione col ``$-$''.
