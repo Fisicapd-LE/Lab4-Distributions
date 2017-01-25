@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {2}Analisi dati}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Calibrazione}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Studio della geometria dell'apparato}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Stima dell'efficienza}{7}{subsection.2.3}

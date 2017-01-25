@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  24 JAN 2017 00:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  25 JAN 2017 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2652,15 +2652,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--57
 [5]
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 65.
- (./tables/asse_correzioni.tex)) [6]) (./sections/chapters/PLACEHOLDER.txt)) [7
-] (./sections/appendix.tex (./sections/appendix/PLACEHOLDER.txt))
-(./sections/bibliography.tex
+ (./tables/asse_correzioni.tex)) [6] (./sections/files/efficienza.tex
+(./graphs/efficienza_int_picco.tex
+(../img/nofloat/../../graphs/efficienza_int_picco.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/efficienza_int_picco.tex Graphic file (type t
+ex)
+)
+(./graphs/efficienza_picco0.tex
+(../img/nofloat/../../graphs/efficienza_picco0.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/efficienza_picco0.tex Graphic file (type tex)
+
+)
+(./graphs/efficienza_picco1.tex
+(../img/nofloat/../../graphs/efficienza_picco1.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/efficienza_picco1.tex Graphic file (type tex)
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8] [9] (./graphs/somma_bella_R2.tex
+(../img/nofloat/../../graphs/somma_bella_R2.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/somma_bella_R2.tex Graphic file (type tex)
+) [10
+
+]))
+(./sections/chapters/PLACEHOLDER.txt)) [11] (./sections/appendix.tex
+(./sections/appendix/PLACEHOLDER.txt)) (./sections/bibliography.tex
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ) (./sections/code.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [8
+ [12
 
 
 ]
@@ -2669,7 +2745,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 6D8B93A4D7B537B8676141B64ACD2014;250.
+(rerunfilecheck)             Checksum: E15215E133A37BB847B2234641C7910F;320.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2680,11 +2756,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 41747 strings out of 493304
- 875016 string characters out of 6139871
- 1105999 words of memory out of 5000000
- 44129 multiletter control sequences out of 15000+600000
- 137306 words of font info for 149 fonts, out of 8000000 for 9000
+ 53429 strings out of 493304
+ 1119408 string characters out of 6139871
+ 1883375 words of memory out of 5000000
+ 55775 multiletter control sequences out of 15000+600000
+ 137577 words of font info for 151 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  76i,15n,99p,10447b,1425s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/sh
@@ -2694,15 +2770,16 @@ cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/f
-onts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gy
-re/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (11 pages, 160928 bytes).
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts
+/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/q
+plr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on Relazione.pdf (15 pages, 261506 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 38957 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 38965 words of extra memory for PDF output out of 42996 (max. 10000000)
 
