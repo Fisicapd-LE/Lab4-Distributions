@@ -1,0 +1,27 @@
+\section{Correzione per angolo solido finito}
+
+Nell'analizzare la dipendenza angolare delle rate di acquisizione per verificare l'anisotropia dell'emissione del secondo gamma si è in prima trascurata la dimensione finita del rivelatore 
+considerandolo puntiforme. Ovviamente tale approssimazione porta a degli errori nell'analisi dati, soprattutto per il fatto che la funzione di correlazione non è costante su tutto l'angolo solido
+spazzato dal rivelatore. Al fine di correggere questa inesattezza, si può pensare di ricavare per ogni angolo $\alpha$ tra i due rivelatori un angolo $\bar\alpha$ tale che l'integrale sull'angolo
+sotteso dal rivelatore posto ad un angolo $\alpha$ della funzione di correlazione sia pari all'integrale di una distribuzione uniforme sull'angolo sotteso dal rivelatore posto invece ad un angolo 
+$\bar\alpha$. Prima di proseguire con il calcolo vero e proprio riduciamo le dimensioni del problema a due essendo il calcolo in 3D troppo complicato \footnote{
+Si è provato a risolvere il problema 3D ma non si è giunti a risultati utilizzabili}, inoltre i suppone che
+il primo fotone interagisca con il rivelatore uno esattamente al centro di quest'ultimo. Il secondo fotone sarà quindi parametrizzato da un angolo $\theta$ rispetto alla traiettoria
+del primo. Definendo per comodità $ G := \arctan{\left(\frac{r}{R}\right)} $, con $ r $ raggio del rivelatore ed $ R $ distanza del rivelatore dalla sorgente, il computo da svolgere,
+sapendo che la distribuzione di probabilità dell'emissione del secondo fotone in funzione dell'angolo tra i due fotoni è $1 + a \cos ^ 2 \theta + b \cos^4 \theta $, è quindi:
+$$ \int_{\alpha -G}^{\alpha +G} \left[ b \cos^4 \theta + a \cos ^ 2  \theta + 1 \right] \dd \theta = \left[ b \cos^4 \bar\alpha + a \cos ^ 2 \bar \alpha + 1 \right] \int_{-G}^{G} \dd\theta = $$
+$$ \left[ b \cos^4 \bar\alpha + a \cos ^ 2 \bar \alpha + 1 \right] \left( 2G \right) $$
+Risolvendo il primo integrale si ottiene:
+$$ \int_{\alpha -G}^{\alpha + G} \left[ b \cos^4 \theta + a \cos ^ 2  \theta + 1 \right] \dd \theta = 
+\frac{b}{4}\left[ \sin \left( \alpha + G \right) \cos^3 \left( \alpha + G \right) - \sin \left( \alpha - G \right) \cos^3 \left( \alpha - G \right) \right] + $$
+$$ \left( \frac{3b}{8} + \frac{a}{2} \right)\left[ \sin \left( \alpha + G \right) \cos \left( \alpha + G \right) - \sin \left( \alpha - G \right) \cos \left( \alpha - G \right) \right] 
++ \left( \frac{3b}{4} + a + 2 \right)G$$
+Definiamo
+$$ I := \frac{1}{2G} \left[ \frac{b}{4}\left[ \sin \left( \alpha + G \right) \cos^3 \left( \alpha + G \right) - \sin \left( \alpha - G \right) \cos^3 \left( \alpha - G \right) \right] \right. $$
+$$ \left. + \left( \frac{3b}{8} + \frac{a}{2} \right)\left[ \sin \left( \alpha + G \right) \cos \left( \alpha + G \right) - \sin \left( \alpha - G \right) \cos \left( \alpha - G \right) \right] 
++ \left( \frac{3b}{4} + a + 2 \right) G \right] $$
+Dunque per ricavarsi l'angolo $ \bar \alpha $ bisogna adesso semplicemente risolvere la seguente equazione biquadratica: 
+$$ b \cos^4 \bar\alpha + a \cos ^ 2 \bar \alpha + 1 - I= 0 $$
+Tale equazione ha come soluzioni:
+$$ \cos^2 \bar \theta  = \frac{-a + \sqrt{a^2 - 4b(1 - I)}}{2b} $$
+dove si è già scartata la soluzione col ``$-$''.
