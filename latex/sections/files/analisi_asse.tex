@@ -1,6 +1,6 @@
 \subsection{Studio della geometria dell'apparato}
-Si è voluto studiare se la sorgente è posta effettivamente al centro dell'asse di rotazione o meno. per farlo si sono semplicemente presi dei dati per un tempo
-costante al variare dell'angolo, e si vuole confrontare la rate con cui tali dati sono stati raccolti, in questo modo si avrà una stima della distanza tra sorgente e
+Si è voluto studiare se la sorgente è posta effettivamente al centro dell'asse di rotazione o meno. Per farlo si sono semplicemente presi dei dati per un tempo
+costante al variare dell'angolo, e è confrontata la rate con cui tali dati sono stati raccolti. In questo modo si avrà una stima della distanza tra sorgente e
 rivelatore al variare dell'angolo del rivelatore stesso. I risultati si possono vedere nella Tabella \ref{tab:asse_dati}, dove l'errore sulle rate è stato preso
 come errore poissoniano sui conteggi e considerando che il tempo non ha errore.
 %
@@ -12,9 +12,9 @@ come errore poissoniano sui conteggi e considerando che il tempo non ha errore.
 \end{table}
 %
 Per trovare ora la posizione dell'asse di rotazione rispetto a quella della sorgente si vada nel sistema di riferimento in cui l'origine è l'asse di rotazione stesso.
-Considerando il rivelatore come a dimensione piccola rispetto alla sua distanza dalla sorgente, si ha che la frequenza con cui registra dati va come $1/r^2$, con $r$ distanza
-tra rivelatore e sorgente. Si consideri un sistema di riferimento in modo tale che il rivelatore a  gradi giaccia sul semiasse negativo delle ascisse, e l'asse di
-rotazione sia sullo zero, e si riscali in maniera che il rivelatore giaccia nelle coordinate (-1,0). In questo modo la distanza tra rivelatore è sorgente sarà presa come 1,
+Considerando il rivelatore come di dimensione piccola rispetto alla sua distanza dalla sorgente, si ha che la frequenza con cui registra dati va come $1/r^2$, con $r$ distanza
+tra rivelatore e sorgente. Si consideri un sistema di riferimento in modo tale che il rivelatore a 0$^\circ$ giaccia sul semiasse negativo delle ascisse, e l'asse di
+rotazione sia sullo zero, e si riscali in maniera che il rivelatore giaccia nelle coordinate (-1,0). In questo modo la distanza tra rivelatore e sorgente sarà presa come 1,
 e sarà la distanza di riferimento. Allora, nelle altre configurazioni, considerando la rotazione come perfetta (cioè rotazione attorno ad un asse realmente unidimensionale),
 si ha che nelle altre configurazioni il rivelatore occupa delle coordinate nel sistema cartesiano facilmente ricavabili a partire da funzioni goniometriche, e la distanza
 dalla sorgente si ottiene a partire da quella di riferimento moltiplicandola per un fattore $\sqrt{\frac{\nu_0}{\nu_\theta}}$, cioè per la radice del rapporto tra la rate
@@ -25,23 +25,19 @@ ad essere uguale per tutte le configurazioni, quindi è sufficiente minimizzare 
 I cerchi si possono vedere nella Figura \ref{fig:asse_rotazione}\\
 \input{./img/asse_rotazione}
 
-Per fare tale operazione si va a definire la funzione analitica che descrive la somma della distanza al quadrato tra i cerchi su cui si prevede giaccia la sorgente:
-$$d = \sum\limits_\theta \left(\sqrt{(x-x_\theta)^2+(y-y_\theta)^2} - r_\theta\right)^2$$
-Minimizzare questa funzione non è semplice, conviene vederla come un $\chi$ quadro: si può fare un fit al posto che la minimizzazione di una funzione.
 Si consideri la funzione che descrive la distanza della
-sorgente dal rivelatore. Usando le stesse notazioni del ragionamento precedente, si ha che la distanza tra un punto $(x,y)$ e il rivelatore nella posizione $\theta$ è data da
-$$\sqrt{(x-x_\theta)(y-y_\theta)}$$
+sorgente dal rivelatore. Si ha che la distanza tra un punto $(x,y)$ e il rivelatore nella posizione $\theta$ è data da
+$$\sqrt{(x-x_\theta)^2+(y-y_\theta)^2} = \sqrt{(x+\cos(\theta))^2+(y-\sin(\theta))^2}$$
 Perciò andando a vedere il raggio stimato precedentemente come valore atteso della distanza, si può fare un fit a due parametri liberi con sei punti per ottenere
 l'effettiva posizione nel piano della sorgente rispetto all'asse di rotazione. Si esegue questa operazione, andando a trovare il grafico che si può vedere nella
 Figura \ref{gr:asse_bidim_2}. Questo rivela come la sorgente sia nel punto:
 $$(0.0007 \pm 0.0004, 0.0076 \pm 0.0004)$$
 \input{./graphs/asse_bidim_2}
-%Devo rifare i calcoli guardando il grafico nuovo, è la prima cosa che faccio domattina!!
 
 Alla luce di quanto discusso fin'ora, si può andare a definire nel migliore dei modi possibili la geometria dell'esperimento. In laboratorio si sono misurate le
 seguenti grandezze:
-$$R1 = 14.1 \text{cm} \hspace{1.5cm} R2 = 14.5 \text{cm} \hspace{1.5cm} d = 8 \text{cm}$$
-Che indicano la distanza tra sorgente e rivelatore 1 (nella configurazione a zero gradi), sorgente e rivelatore 2 e il diametro di entrambi i rivelatori. Dai calcoli fatti
+$$R1 = 14.1 \text{cm} \hspace{1.5cm} R2 = 14.5 \text{cm} \hspace{1.5cm} r = 4 \text{cm}$$
+Che indicano la distanza tra sorgente e rivelatore 1 (nella configurazione a zero gradi), sorgente e rivelatore 2 e il raggio di entrambi i rivelatori. Dai calcoli fatti
 risulta che la sorgente non coincide esattamente con l'asse di rotazione di R1. Perciò R1 non è l'unità nel sistema di riferimento precedentemente scelto, ma si ha che R1
 è uguale a $\sqrt{(1+0.0007)^2+(0.0076)^2} = 1.0007$
 e perciò l'unità nel sistema di riferimento precedente è data da:
@@ -64,7 +60,7 @@ trigonometrica, sapendo la posizione della sorgente rispetto all'asse di rotazio
 che non si sono fatte le necessarie approssimazioni in quella tabella, ciò è conseguenza del fatto che prima di approssimare correttamente i valori si vuole conoscere 
 l'entità della correzione da fare}, che sono stati ottenuti utilizzando le formule:
 $$\theta' = 180^\circ -\arctan\left(\frac{y_s-\sin\theta}{x_s+\cos\theta}\right) \hspace{3 cm} d' = \sqrt{(x_0+\cos\theta)^2+(y_0-\sin\theta)^2}$$
-e la distanza è, come prima, in unità arbitrarie, cioè nel sistema di riferimento in cui la distanza tra il rivelatore uno e l'asse (cioè 14.1~cm) è unitaria.
+e la distanza è, come prima, in unità arbitrarie, cioè nel sistema di riferimento in cui la distanza tra il rivelatore 1 e l'asse (cioè 14.1~cm) è unitaria.
 %
 \begin{table}[h]
 	\centering

@@ -6,19 +6,19 @@ registrati nei due diversi rivelatori entro un intervallo di tempo di 200~ns uno
 il fotone da 1173~keV e R2 quello più energetico. A questo punto, dato che la teoria assicura che questi fotoni vengono emessi sempre in coppia, il rapporto tra questo
 numero di coincidenze e il numero di fotoni a 1173~keV nel fotopicco di R1 dà effettivamente l'efficienza di R2 nella configurazione a zero gradi. Nella
 Figura \ref{gr:efficienza_int_picco} si può vedere il picco a 1173~keV di R1, che, integrato, rivela un numeri di fotoni pari a $(7.32447 \pm 0.00085)\times 10^7$.
-Nella Figura \ref{gr:efficienza_picco0} e \ref{gr:efficienza_picco1}, invece, si possono vedere i due spettri una volta imposta la coincidenza e richiesto che i fotoni stessero
-nei fotopicchi di interesse, e queste figure rivelano come effettivamente si abbiano $(3.35800 \pm 0.0058)\times 10^5$ coincidenze. Questo vuol dire che l'efficienza del rivelatore nella configurazione
+Nella Figura \ref{gr:efficienza_picco1}, invece, si può vedere lo spettro del rivelatore 1 una volta imposta la coincidenza e richiesto che i fotoni stessero
+nei fotopicchi di interesse. Questa figura rivela come effettivamente si abbiano $(3.35800 \pm 0.0058)\times 10^5$ coincidenze. Questo vuol dire che l'efficienza del rivelatore nella configurazione
 a zero gradi è data da
 $$\varepsilon_{1333}=\frac{3.35\times 10^5}{7.32447 \times 10^7}=(4.574 \pm 0.008)\times 10^{-3}$$
 \input{./graphs/efficienza_int_picco}
-\input{./graphs/efficienza_picco0}
+%\input{./graphs/efficienza_picco0}
 \input{./graphs/efficienza_picco1}
-dove l'errore è stato calcolato sempre come possoniano, e per l'efficienza si possono considerare i due integrali come indipendenti.\\
+dove l'errore è stato calcolato sempre come poissoniano, e per l'efficienza si possono considerare i due integrali come indipendenti.\\
 
 \FloatBarrier
 Una diversa stima di efficienza si può effettuare utilizzando il cosiddetto \textit{metodo del picco somma}: si va a guardare all'interno del rivelatore il picco dato dalla 
 somma dei due fotoni emessi dalla sorgente. Una simile rappresentazione di tale somma si può vedere nella Figura \ref{gr:somma_bella_R2}. Tale figura è stata fittata 
-utilizzando la somma di una funzione esponenziale (che vuole descrivere il fondo), e tre funzioni gaussiana che descrivono in effeti la somma di due fotoni ugualmente energetici
+utilizzando la somma di una funzione esponenziale (che vuole descrivere il fondo), e tre funzioni gaussiane che descrivono in effeti la somma di due fotoni ugualmente energetici
 (la prima e la terza) e la somma dei due fotoni a diversa energia.\\
 \input{./graphs/somma_bella_R2}
 
@@ -30,7 +30,7 @@ direttamente dai grafici, e rivelano i valori:
 $$I_{1173} = (7.32447 \pm 0.00085)\times 10^7 \hspace{3cm} I_{1333} = (6.22539 \pm 0.00079)\times 10^7$$
 Per quanto riguarda il picco somma, invece, dato che giace su un fondo non trascurabile, per leggerne l'integrale conviene andare a guardare i valori dei parametri
 interpolanti, in particolare si avrà:
-$$I_{2506}= p3\ p5\sqrt{2\pi} = (2.097 \pm 0.021)\times 10^4$$
+$$I_{2506} = A_2\ \sigma_2\sqrt{2\pi} = P_3\ P_5 \sqrt{2\pi} = (2.097 \pm 0.021)\times 10^4$$
 Dove l'errore è stato calcolato considerando gli errori stimati dal fit e la loro correlazione (comunque si vede essere dello stesso ordine di quello che sarebbe un errore
 poissoniano associato alla misura). Allora, considerando gli integrali dei picchi come indipendenti, per quanto
 scritto si avrà:
