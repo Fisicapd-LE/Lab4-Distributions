@@ -10,3 +10,4 @@
 \contentsline {subsubsection}{\numberline {2.5.1}Analisi basilare}{11}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Correzione per angolo solido finito}{12}{subsubsection.2.5.2}
 \contentsline {subsubsection}{\numberline {2.5.3}Simulazione tramite metodo Monte Carlo}{14}{subsubsection.2.5.3}
+\contentsline {section}{\numberline {A}Interpolazioni gaussiane}{15}{appendix.Alph1}

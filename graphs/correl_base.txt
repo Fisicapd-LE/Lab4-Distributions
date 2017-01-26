@@ -1,1 +1,1 @@
-Grafico delle rate calcolate al variare dell'angolo tra Riv 1 e Riv 2, considerandoli puntiformi.
+Grafico delle rate calcolate al variare dell'angolo tra Rivelatore 1 e Rivelatore 2, considerandoli puntiformi.

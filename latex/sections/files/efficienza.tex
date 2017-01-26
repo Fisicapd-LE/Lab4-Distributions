@@ -5,7 +5,7 @@ una misura notturna (della durata di circa una ventina di ore) e si è studiato 
 registrati nei due diversi rivelatori entro un intervallo di tempo di 200~ns uno dall'altro, e poi si sono contati il numero di queste coincidenze in cui R1 ha registrato
 il fotone da 1173~keV e R2 quello più energetico. A questo punto, dato che la teoria assicura che questi fotoni vengono emessi sempre in coppia, il rapporto tra questo
 numero di coincidenze e il numero di fotoni a 1173~keV nel fotopicco di R1 dà effettivamente l'efficienza di R2 nella configurazione a zero gradi. Nella
-Figura \ref{gr:a_cazzp} si può vedere il picco a 1173~keV di R1, che, tramite un fit che tenga conto di un fondo esponenziale, rivela un numero
+Figura \ref{gr:a_cazzo} si può vedere il picco a 1173~keV di R1, che, tramite un fit che tenga conto di un fondo esponenziale, rivela un numero
 di fotoni pari a $(5.991 \pm 0.0010)\times 10^7$.
 Nella Figura \ref{gr:efficienza_picco1}, invece, si può vedere lo spettro del rivelatore 1 una volta imposta la coincidenza e richiesto che i fotoni stessero
 nei fotopicchi di interesse. Questa figura rivela come effettivamente si abbiano $(3.35800 \pm 0.0058)\times 10^5$ coincidenze. Questo vuol dire che l'efficienza del 
@@ -18,7 +18,7 @@ $$\varepsilon_{1333}=\frac{3.35\times 10^5}{5.991 \times 10^7}=(5.5917 \pm 0.05)
 dove l'errore è stato calcolato sempre come poissoniano, e per l'efficienza si possono considerare i due integrali come indipendenti.\\
 
 Una correzione ulteriore si può fare notando che negli spettri sono presenti anche delle coincidenze tra fotoni delle stesse energie. Questi picchi sono legati a due eventi
-distrinti e non correlati che avvengolo all'interno del campione di cobalto. Questo fenomeno porto a un errore sistematico nella stima dell'efficienza: si stanno contando
+distinti e non correlati che avvengono all'interno del campione di cobalto. Questo fenomeno porta ad un errore sistematico nella stima dell'efficienza: si stanno contando
 anche gli eventi legati a un doppio decadimento in cui due fotoni vengono persi e due fotoni vengono registrati dal sistema di acquisizione come correlati. Assumendo che le
 efficienze siano uguali per i due fotoni e siano uguali tra i due rivelatori, si ha che la rate di eventi che si vogliono selezionare e togliere (cioè due eventi indipendenti
 con il fotone da 1173~keV in R1 e quello da 1333~keV in R2) è uguale alla rate di eventi con lo stesso fotone nei due diversi rivelatori. Questo ci porta a dire che il numero
@@ -55,9 +55,9 @@ simile a quella che era stata stimata in precedenza (sebbene non siano compatibi
 come unico errore quello legato all'integrale del picco).\\
 
 Una correzione a questi valori si può fare andando a considerare gli altri due picchi che si possono vedere nella Figura \ref{gr:somma_bella_R2}. Questi due picchi sono
-associati a due fotoni della stessa energia che vengono visti dallo stesso rivelatore. Con riferimento al Testo \ref{bib:knoll} (da cui si è presa la formula per l'analisi
-del picco somma), si vede come la presenza di questi due picchi vada a modificare il reale valore dei fotoni ad una data energia che vengono visti. Infatti, se la formula
-sopra usata per la stima dell'efficienza tramite il picco somma funziona bene se l'area del primo picco è data da $I_{1173}=N_{1}-N{12}$, la presenza di un fattore
+associati a due fotoni della stessa energia che vengono visti dallo stesso rivelatore. Con riferimento al Testo \cite{bib:knoll} (da cui si è presa la formula per l'analisi
+del picco somma), si vede come la presenza di questi due picchi vada a modificare il reale valore dei fotoni ad una data energia che vengono visti. Infatti la formula
+sopra usata per la stima dell'efficienza tramite il picco somma funziona bene se l'area del primo picco è data da $I_{1173}=N_{1}-N_{12}$, la presenza dell'addendo
 $-2N_{11}$ va a introdurre nel calcolo un errore sistematico. Per correggerlo è sufficiente andare a sommare il doppio dell'area di tale picco al valore dell'integrale.
 Le aree dei due picchi legati alla doppia rivelazione di fotoni alla stessa energia sono:
 $$I_{2346} = (1.53\pm 0.022)\times 10^5 \hspace{3cm} I_{} = (5.14 \pm 0.06)\times 10^4 $$
