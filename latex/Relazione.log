@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  26 JAN 2017 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  26 JAN 2017 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2653,8 +2653,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--4
 
  []
 
-(./sections/chapters/02-Analisi.tex (./sections/files/calibrazione.tex
-(./graphs/calib_r1.tex (../img/nofloat/../../graphs/calib_r1.tex
+(./sections/chapters/02-Analisi.tex (./sections/files/preliminar.tex) [2]
+(./sections/files/calibrazione.tex (./graphs/calib_r1.tex
+(../img/nofloat/../../graphs/calib_r1.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2667,11 +2668,8 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/calib_r1.tex Graphic file (type tex)
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./graphs/calib_r2.tex (../img/nofloat/../../graphs/calib_r2.tex
+) (./graphs/calib_r2.tex
+(../img/nofloat/../../graphs/calib_r2.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2688,16 +2686,11 @@ File: ../img/nofloat/../../graphs/calib_r2.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [2] [3] (./sections/files/analisi_asse.tex (./tables/asse_dati.tex)
+)) [3] (./sections/files/analisi_asse.tex (./tables/asse_dati.tex) [4]
 (./img/asse_rotazione.tex (../img/nofloat/../../img/asse_rotazione.tex)
 File: ../img/nofloat/../../img/asse_rotazione.tex Graphic file (type tex)
 )
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4
-
-] (./graphs/asse_bidim_2.tex (../img/nofloat/../../graphs/asse_bidim_2.tex
+(./graphs/asse_bidim_2.tex (../img/nofloat/../../graphs/asse_bidim_2.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2713,7 +2706,7 @@ File: ../img/nofloat/../../graphs/asse_bidim_2.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
@@ -2725,15 +2718,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--53
 
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 61.
-[5] (./tables/asse_correzioni.tex))
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] (./sections/files/efficienza.tex
+[6] (./tables/asse_correzioni.tex)) (./sections/files/efficienza.tex
 
 LaTeX Warning: Reference `gr:a_cazzo' on page 7 undefined on input line 8.
 
-(./graphs/efficienza_picco1.tex
+[7] (./graphs/efficienza_picco1.tex
 (../img/nofloat/../../graphs/efficienza_picco1.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2752,11 +2741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] (./graphs/somma_bella_R2.tex
-(../img/nofloat/../../graphs/somma_bella_R2.tex
+(./graphs/somma_bella_R2.tex (../img/nofloat/../../graphs/somma_bella_R2.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2774,13 +2759,13 @@ File: ../img/nofloat/../../graphs/somma_bella_R2.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
-[8]) (./sections/files/correlazione.tex
-(./sections/files/correlazione/correl_base.tex [9] (./graphs/correl_base.tex
+[9]) (./sections/files/correlazione.tex
+(./sections/files/correlazione/correl_base.tex (./graphs/correl_base.tex
 (../img/nofloat/../../graphs/correl_base.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2790,8 +2775,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/correl_base.tex Graphic file (type tex)
-))
-(./sections/files/correlazione/finite_angle_correction.tex [10]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)) [10] (./sections/files/correlazione/finite_angle_correction.tex
 Overfull \hbox (4.10223pt too wide) detected at line 19
 [] [][] [] []  \OT1/qpl/m/n/10 d\U/zeur/m/n/10 ^^R \U/zeus/m/n/10 ½ [] [][] [] 
  \OT1/qpl/m/n/10 d\U/zeur/m/n/10 ^^R \U/zeus/m/n/10 ½ [] []
@@ -2808,11 +2796,8 @@ Overfull \hbox (212.92178pt too wide) detected at line 29
 []\U/zeur/m/n/10 I \U/zeus/m/n/10 º½ [] [] []
  []
 
-(./tables/fini_correzioni.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./graphs/correl_fini.tex (../img/nofloat/../../graphs/correl_fini.tex
+[11] (./tables/fini_correzioni.tex) (./graphs/correl_fini.tex
+(../img/nofloat/../../graphs/correl_fini.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2825,10 +2810,8 @@ File: ../img/nofloat/../../graphs/correl_fini.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [11] [12] (./sections/files/correlazione/monte_carlo.tex)))
-(./sections/chapters/PLACEHOLDER.txt)) [13
-
-] (./sections/appendix.tex
+)) [12] (./sections/files/correlazione/monte_carlo.tex)))
+(./sections/chapters/PLACEHOLDER.txt)) [13] (./sections/appendix.tex
 (./sections/appendix/PLACEHOLDER.txt)) (./sections/bibliography.tex)
 (./sections/code.tex) [14
 
@@ -2840,7 +2823,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 1D5F796EB8BBBD3FCE45C44FEFAA09ED;637.
+(rerunfilecheck)             Checksum: 15FE37BD50B0A61E8D3E48CFDACEBC96;728.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2854,13 +2837,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46417 strings out of 493029
- 1013828 string characters out of 6136234
- 2213330 words of memory out of 5000000
- 48851 multiletter control sequences out of 15000+600000
+ 46442 strings out of 493029
+ 1014052 string characters out of 6136234
+ 2214319 words of memory out of 5000000
+ 48871 multiletter control sequences out of 15000+600000
  140811 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,15n,99p,10406b,1569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,15n,99p,10406b,1575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/t
 ex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -2874,10 +2857,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts
 /type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/q
 plr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (17 pages, 249558 bytes).
+Output written on Relazione.pdf (17 pages, 253027 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 39509 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 39517 words of extra memory for PDF output out of 42996 (max. 10000000)
 

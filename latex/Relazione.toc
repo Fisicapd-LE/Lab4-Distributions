@@ -2,10 +2,11 @@
 \select@language {italian}
 \contentsline {section}{\numberline {1}Esecuzione esperimento}{1}{section.1}
 \contentsline {section}{\numberline {2}Analisi dati}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Calibrazione}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Studio della geometria dell'apparato}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Stima dell'efficienza}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Correlazione}{10}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Analisi basilare}{10}{subsubsection.2.4.1}
-\contentsline {subsection}{\numberline {2.5}Correzione per angolo solido finito}{10}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Simulazione tramite metodo Monte Carlo}{13}{subsubsection.2.5.1}
+\contentsline {subsection}{\numberline {2.1}Analisi preliminare del segnale}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Calibrazione}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Studio della geometria dell'apparato}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Stima dell'efficienza}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Correlazione}{10}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Analisi basilare}{10}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Correzione per angolo solido finito}{11}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Simulazione tramite metodo Monte Carlo}{13}{subsubsection.2.5.3}

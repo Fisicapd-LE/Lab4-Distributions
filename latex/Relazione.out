@@ -1,9 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Esecuzione esperimento}{}% 1
 \BOOKMARK [1][-]{section.2}{Analisi dati}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Calibrazione}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Studio della geometria dell'apparato}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Stima dell'efficienza}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Correlazione}{section.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.4.1}{Analisi basilare}{subsection.2.4}% 7
-\BOOKMARK [2][-]{subsection.2.5}{Correzione per angolo solido finito}{section.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.5.1}{Simulazione tramite metodo Monte Carlo}{subsection.2.5}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Analisi preliminare del segnale}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Calibrazione}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Studio della geometria dell'apparato}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Stima dell'efficienza}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Correlazione}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Analisi basilare}{subsection.2.5}% 8
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Correzione per angolo solido finito}{subsection.2.5}% 9
+\BOOKMARK [3][-]{subsubsection.2.5.3}{Simulazione tramite metodo Monte Carlo}{subsection.2.5}% 10
