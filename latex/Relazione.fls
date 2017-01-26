@@ -604,6 +604,12 @@ INPUT ./tables/asse_correzioni.tex
 INPUT ./tables/asse_correzioni.tex
 INPUT ./sections/files/efficienza.tex
 INPUT ./sections/files/efficienza.tex
+INPUT ./graphs/a_cazzo.tex
+INPUT ./graphs/a_cazzo.tex
+INPUT ../img/nofloat/../../graphs/a_cazzo.tex
+INPUT ../img/nofloat/../../graphs/a_cazzo.tex
+INPUT ../img/nofloat/../../graphs/a_cazzo.tex
+INPUT ../img/nofloat/../../graphs/a_cazzo.tex
 INPUT ./graphs/efficienza_picco1.tex
 INPUT ./graphs/efficienza_picco1.tex
 INPUT ../img/nofloat/../../graphs/efficienza_picco1.tex
