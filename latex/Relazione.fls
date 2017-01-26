@@ -622,6 +622,9 @@ INPUT ../img/nofloat/../../graphs/somma_bella_R2.tex
 INPUT ../img/nofloat/../../graphs/somma_bella_R2.tex
 INPUT ../img/nofloat/../../graphs/somma_bella_R2.tex
 INPUT ../img/nofloat/../../graphs/somma_bella_R2.tex
+INPUT /usr/share/texmf/tex/latex/tex-gyre/ts1qpl.fd
+INPUT /usr/share/texmf/tex/latex/tex-gyre/ts1qpl.fd
+INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ts1-qplr.tfm
 INPUT ./sections/files/correlazione.tex
 INPUT ./sections/files/correlazione.tex
 INPUT ./sections/files/correlazione/correl_base.tex
@@ -645,6 +648,8 @@ INPUT ../img/nofloat/../../graphs/correl_fini.tex
 INPUT ../img/nofloat/../../graphs/correl_fini.tex
 INPUT ./sections/files/correlazione/monte_carlo.tex
 INPUT ./sections/files/correlazione/monte_carlo.tex
+INPUT sections/chapters/03-Conclusioni.tex
+INPUT sections/chapters/03-Conclusioni.tex
 INPUT sections/chapters/PLACEHOLDER.txt
 INPUT sections/chapters/PLACEHOLDER.txt
 INPUT ./sections/appendix.tex
@@ -696,6 +701,7 @@ INPUT ./sections/code.tex
 INPUT Relazione.aux
 INPUT ./Relazione.out
 INPUT ./Relazione.out
+INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc
