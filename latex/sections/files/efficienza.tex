@@ -5,14 +5,14 @@ una misura notturna (della durata di circa una ventina di ore) e si è studiato 
 registrati nei due diversi rivelatori entro un intervallo di tempo di 200~ns uno dall'altro, e poi si sono contati il numero di queste coincidenze in cui R1 ha registrato
 il fotone da 1173~keV e R2 quello più energetico. A questo punto, dato che la teoria assicura che questi fotoni vengono emessi sempre in coppia, il rapporto tra questo
 numero di coincidenze e il numero di fotoni a 1173~keV nel fotopicco di R1 dà effettivamente l'efficienza di R2 nella configurazione a zero gradi. Nella
-Figura \ref{gr:a_cazzp} si può vedere il picco a 1173~keV di R1, che, tramite un fit che tenga conto di un fondo esponenziale, rivela un numero
+Figura \ref{gr:a_cazzo} si può vedere il picco a 1173~keV di R1, che, tramite un fit che tenga conto di un fondo esponenziale, rivela un numero
 di fotoni pari a $(5.991 \pm 0.0010)\times 10^7$.
 Nella Figura \ref{gr:efficienza_picco1}, invece, si può vedere lo spettro del rivelatore 1 una volta imposta la coincidenza e richiesto che i fotoni stessero
 nei fotopicchi di interesse. Questa figura rivela come effettivamente si abbiano $(3.35800 \pm 0.0058)\times 10^5$ coincidenze. Questo vuol dire che l'efficienza del 
 rivelatore nella configurazione
 a zero gradi è data da
 $$\varepsilon_{1333}=\frac{3.35\times 10^5}{5.991 \times 10^7}=(5.5917 \pm 0.05)\times 10^{-3}$$
-\input{./graphs/a_cazzo}
+%\input{./graphs/a_cazzo}
 %\input{./graphs/efficienza_picco0}
 \input{./graphs/efficienza_picco1}
 dove l'errore è stato calcolato sempre come poissoniano, e per l'efficienza si possono considerare i due integrali come indipendenti.\\
@@ -31,7 +31,7 @@ efficienze si possono ottenere a partire dal rapporto $k$ tra l'integrale del pi
 interpolando i grafici dopo averne tolto il fondo, e rivelano i valori\footnote{Non si riportano i grafici per questioni di fluidità della relazione}:
 $$I_{1173} = (5.889 \pm 0.0018)\times 10^7 \hspace{3cm} I_{1333} = (5.8338 \pm 0.0010)\times 10^7$$
 Per quanto riguarda il picco somma, invece, si avrà:
-$$I_{2506} = A_2\ \sigma_2\sqrt{2\pi}\frac{1}{\text{bin width} = P_3\ P_5 \sqrt{2\pi}\frac{1}{0.218396} = (9.602 \pm 0.096)\times 10^4$$
+$$I_{2506} = A_2\ \sigma_2\sqrt{2\pi}\frac{1}{\text{bin width}} = P_3\ P_5 \sqrt{2\pi}\frac{1}{0.218396} = (9.602 \pm 0.096)\times 10^4$$
 Allora, considerando gli integrali dei picchi come indipendenti, per quanto scritto si avrà:
 $$\varepsilon_{1173}=\frac{k_{2506}}{1+k_{2506}}=(1.643 \pm 0.016)\times 10^{-3} \hspace{3cm} \varepsilon_{1333}=\frac{k_{2506}}{1+k_{2506}}=(1.628 \pm 0.016)\times 10^{-3}$$
 %Cambiare al posto di rapporto k metto k/(1-k)
@@ -41,7 +41,7 @@ simile a quella che era stata stimata in precedenza (sebbene non siano compatibi
 come unico errore quello legato all'integrale del picco).\\
 
 Una correzione a questi valori si può fare andando a considerare gli altri due picchi che si possono vedere nella Figura \ref{gr:somma_bella_R2}. Questi due picchi sono
-associati a due fotoni della stessa energia che vengono visti dallo stesso rivelatore. Con riferimento al Testo \ref{bib:knoll} (da cui si è presa la formula per l'analisi
+associati a due fotoni della stessa energia che vengono visti dallo stesso rivelatore. Con riferimento al Testo \cite{bib:knoll} (da cui si è presa la formula per l'analisi
 del picco somma), si vede come la presenza di questi due picchi vada a modificare il reale valore dei fotoni ad una data energia che vengono visti. Infatti, se la formula
 sopra usata per la stima dell'efficienza tramite il picco somma funziona bene se l'area del primo picco è data da $I_{1173}=N_{1}-N{12}$, la presenza di un fattore
 $-2N_{11}$ va a introdurre nel calcolo un errore sistematico. Per correggerlo è sufficiente andare a sommare il doppio dell'area di tale picco al valore dell'integrale.

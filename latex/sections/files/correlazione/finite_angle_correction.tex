@@ -1,4 +1,4 @@
-\section{Correzione per angolo solido finito}
+\subsection{Correzione per angolo solido finito}
 
 Nell'analizzare la dipendenza angolare delle rate di acquisizione per verificare l'anisotropia dell'emissione del secondo gamma si è in prima trascurata la dimensione finita del rivelatore 
 considerandolo puntiforme. Ovviamente tale approssimazione porta a degli errori nell'analisi dati, soprattutto per il fatto che la funzione di correlazione non è costante su tutto l'angolo solido
@@ -38,12 +38,21 @@ Tale equazione ha come soluzioni:
 \end{equation}
 dove si è già scartata la soluzione col ``$-$''.
 
-Per ottenere i punti da interpolare si applica la formula \ref{fun:corr_ang} ai punti già corretti per la posizione della sorgente (\ref{tab:correzione_asse2}) per ottenere la Tabella \ref{tab:fini_correzioni}. Dai valori in questa tabella si può arrivare al grafico di Figura \ref{gr:correl_fini}, che una volta interpolato da i parametri
+\begin{table}[h]
+	\centering
+	\input{./tables/fini_correzioni}
+	\caption{Tabella delle correzioni effettuate sugli angoli considerando l'angolo solido finito sotteso dal rivelatore}
+	\label{tab:fini_correzioni}
+\end{table}
+
+Per ottenere i punti da interpolare si applica la formula \ref{fun:corr_ang} ai punti già corretti per la posizione della sorgente (Tabella \ref{tab:asse_correzioni_2}) per ottenere la Tabella \ref{tab:fini_correzioni}. Dai valori in questa tabella si può arrivare al grafico di Figura \ref{gr:correl_fini}, che una volta interpolato da i parametri
 
 $$a=0.14 \pm 0.02$$
 $$b=0.0 \pm 0.1$$
 
 che sono pienamente compatibili con quelli teorici, seppur a causa degli errori alti (14\% per a).
+
+\input{./graphs/correl_fini}
 
 
 
